@@ -1,0 +1,20 @@
+package com.example.demo.chat.service;
+
+import org.springframework.stereotype.Service;
+
+import com.example.demo.chat.ChatMessage;
+import com.example.demo.chat.repository.ChatRepository;
+
+import lombok.RequiredArgsConstructor;
+
+@Service
+@RequiredArgsConstructor
+public class ChatService {
+	
+	private final ChatRepository chatRepository;
+
+	
+	public void save(ChatMessage chatMessage) {
+		
+	}
+}

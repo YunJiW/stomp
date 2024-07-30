@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>WebSocket Chat</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/stomp.js/2.3.3/stomp.min.js"></script>
+    <script>
+        var stompClient = null;
+
+        function connect() {
+            var socket = new WebSocket('ws://localhost:8080/ws'); // WebSocket 엔드포인트 설정
+            stompClient = Stomp.over(socket);
+            stompClient.connect({}, function (frame) {
+                console.log('Connected: ' + frame);
+                stompClient.subscribe('/topic/public', function (messageOutput) {
+                    showMessage(JSON.parse(messageOutput.body).content);
+                });
+            });
+        }
+
+        function sendMessage() {
+            var messageContent = document.getElementById("message").value;
+            stompClient.send("/app/chat.sendMessage", {}, JSON.stringify({'content': messageContent}));
+        }
+
+        function showMessage(message) {
+            var response = document.getElementById("response");
+            var p = document.createElement("p");
+            p.appendChild(document.createTextNode(message));
+            response.appendChild(p);
+        }
+
+        window.onload = function() {
+            connect();
+        }
+    </script>
+</head>
+<body>
+    <div>
+        <input type="text" id="message" placeholder="Type a message..."/>
+        <button onclick="sendMessage()">Send</button>
+    </div>
+    <div id="response"></div>
+</body>
+</html>

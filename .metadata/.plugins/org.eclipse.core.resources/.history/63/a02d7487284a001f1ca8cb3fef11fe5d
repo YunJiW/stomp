@@ -1,0 +1,13 @@
+package com.example.demo.Chat;
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
+
+@AllArgsConstructor
+@Data
+public class ChatDto {
+	
+	private long roomId;
+	private long userId;
+
+}

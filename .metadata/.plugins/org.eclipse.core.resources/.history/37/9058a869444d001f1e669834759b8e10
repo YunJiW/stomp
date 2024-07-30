@@ -1,0 +1,14 @@
+spring:
+  output:
+    ansi:
+      enabled: always
+  
+  
+  logging:
+    level:
+      org:
+        springframework:
+          messaging: trace
+          web:
+            socket: trace
+			

@@ -1,0 +1,29 @@
+package com.example.demo.chat;
+
+import org.springframework.messaging.handler.annotation.DestinationVariable;
+import org.springframework.messaging.handler.annotation.MessageMapping;
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.extern.slf4j.Slf4j;
+
+@Data
+public class ChatMessage {
+	
+	private String type;
+	private String content;
+	private String sender;
+	
+	public ChatMessage(){
+		
+	}
+
+	
+	public enum MessageType{
+		CHAT,
+		JOIN,
+		LEAVE
+	}
+	
+
+}
