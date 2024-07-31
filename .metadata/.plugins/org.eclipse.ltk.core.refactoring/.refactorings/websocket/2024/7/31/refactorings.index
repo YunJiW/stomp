@@ -9,3 +9,22 @@
 1722217963013	Delete element
 1722317723719	Delete element
 1722320644076	Rename type 'redisConfig'
+1722386311266	Rename package 'com.example.demo.service'
+1722390038685	Delete element
+1722392064827	Move 'roomdetail.html' to 'static'
+1722392066450	Move 'room.html' to 'static'
+1722392070882	Delete element
+1722392084095	Delete element
+1722392102475	Delete element
+1722392105334	Delete element
+1722392113101	Copy folder
+1722392118684	Delete element
+1722392119516	Delete element
+1722392122967	Delete element
+1722392388150	Delete element
+1722392401675	Move 2 resources to 'static'
+1722392411679	Delete element
+1722392425566	Move 2 resources to 'templates.chat'
+1722395444795	Rename resource 'templates.chat'
+1722396445682	Delete element
+1722396450375	Delete element
