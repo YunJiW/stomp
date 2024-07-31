@@ -24,7 +24,6 @@
     <fullyQualifiedTypeName name="org.springframework.stereotype.Service"/>
     <fullyQualifiedTypeName name="org.springframework.context.annotation.Primary"/>
     <fullyQualifiedTypeName name="com.fasterxml.jackson.databind.ObjectMapper"/>
-    <fullyQualifiedTypeName name="com.example.demo.chat.ChatMessage"/>
     <fullyQualifiedTypeName name="org.springframework.messaging.simp.SimpMessageSendingOperations"/>
     <fullyQualifiedTypeName name="com.fasterxml.jackson.core.JsonProcessingException"/>
     <fullyQualifiedTypeName name="org.springframework.data.redis.core.RedisTemplate"/>
@@ -58,4 +57,5 @@
     <fullyQualifiedTypeName name="org.springframework.data.redis.connection.RedisConnectionFactory"/>
     <fullyQualifiedTypeName name="org.springframework.data.redis.listener.RedisMessageListenerContainer"/>
     <fullyQualifiedTypeName name="lombok.extern.slf4j.Slf4j"/>
+    <fullyQualifiedTypeName name="com.example.demo.chat.ChatMessage"/>
 </qualifiedTypeNameHistroy>
